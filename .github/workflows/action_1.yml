@@ -24,6 +24,9 @@ jobs:
         run: pwd
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
+      # Checks-out your repository under $GITHUB_WORKSPACE
+      - name: Run ls -la
+        run: ls -la
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
